@@ -19,11 +19,11 @@ const results = document.getElementById('results')
 const width = ctx.canvas.width;
 const height = ctx.canvas.height;
 const half = width / 2;
-/*const center = {
-    x: width / 2,
-    y: height / 2
+const center = {
+  x: width / 2,
+  y: height / 2
 };
-let then = Date.now();
+/*let then = Date.now();
 let startTime = then;
 let frameCount = 0;
 let fpsTrackingId, intervalId, timeoutId, isColourful, cool, numberOfLines, glow, maxLineThickness;
