@@ -137,14 +137,14 @@
   background: #cd7f32;
 }
 
-/*.num {
-    width: 30px;
-    color: white;
-    background-color: black;
-    border: 1px solid #cd7f32;
+.num {
+  width: 30px;
+  color: white;
+  background-color: black;
+  border: 1px solid #cd7f32;
 }
 
-#label {
+/*#label {
     color: #cd7f32;
     font-size: 15px;
 }
