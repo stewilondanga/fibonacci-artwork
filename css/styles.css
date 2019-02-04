@@ -144,12 +144,12 @@
   border: 1px solid #cd7f32;
 }
 
-/*#label {
-    color: #cd7f32;
-    font-size: 15px;
+#label {
+  color: #cd7f32;
+  font-size: 15px;
 }
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
