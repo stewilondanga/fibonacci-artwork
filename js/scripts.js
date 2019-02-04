@@ -182,17 +182,17 @@ const getSpiral = function(pA, pB) {
 };
 
 
-/*function generateCyanOrPurple() {
-	const rand = Math.random();
+function generateCyanOrPurple() {
+  const rand = Math.random();
 
-	  if (rand <= 0.25) {
-	  	return 'rgba(158, 80, 240, ' + Math.random() + ')'; // purple
-	  } else {
-		return 'rgba(0, 255, 255, ' + Math.random() + ')'; //cyan
-	  }
+  if (rand <= 0.25) {
+    return 'rgba(158, 80, 240, ' + Math.random() + ')'; // purple
+  } else {
+    return 'rgba(0, 255, 255, ' + Math.random() + ')'; //cyan
+  }
 }
 
-function getRandomEdgePosition() {
+/*function getRandomEdgePosition() {
 	const rand = Math.random();
 
     if (rand < 0.25) { // Top border
