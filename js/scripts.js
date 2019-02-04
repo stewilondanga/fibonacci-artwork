@@ -42,42 +42,46 @@ function fetchVariables() {
     document.getElementById('can').className = '';
   }
 }
-/*function startInterval() {
-    fetchVariables();
-    ctx.clearRect(0, 0, width, height);
-    // Make canvas circular
-    ctx.beginPath();
-    ctx.arc(half, half, 200, 0, Math.PI * 2, true);
 
-    ctx.shadowBlur = 10;
-    ctx.shadowColor = "#cd7f32";
-    ctx.shadowBlur = 0;
+function startInterval() {
+  fetchVariables();
+  ctx.clearRect(0, 0, width, height);
+  // Make canvas circular
+  ctx.beginPath();
+  ctx.arc(half, half, 200, 0, Math.PI * 2, true);
 
-    ctx.stroke();
-    ctx.fill();
-    ctx.clip();
+  ctx.shadowBlur = 10;
+  ctx.shadowColor = "#cd7f32";
+  ctx.shadowBlur = 0;
 
-    ctx.closePath();
+  ctx.stroke();
+  ctx.fill();
+  ctx.clip();
 
-    intervalId = setInterval(function() {
-        const coords = getRandomEdgePosition();
-        const vertices = getSpiral({x: 0, y: 0}, coords);
-        const pts = vertices.reverse();
-        const t = 0;
-        const id = fpsTrackingId = 'animate_' + Math.floor(Math.random()*1000);
-        const color = isColourful ? generateRGB() : generateCyanOrPurple();
-        ctx.strokeStyle = color;
-        if (glow) {
-            ctx.shadowBlur = 2;
-            ctx.shadowColor = color;
-        }
-        ctx.lineWidth = Math.floor(Math.random()*maxLineThickness);
-        ctx.lineCap = "round";
+  ctx.closePath();
 
-        animate(pts, t, id);
-    }, timeBetweenLines);
+  intervalId = setInterval(function() {
+    const coords = getRandomEdgePosition();
+    const vertices = getSpiral({
+      x: 0,
+      y: 0
+    }, coords);
+    const pts = vertices.reverse();
+    const t = 0;
+    const id = fpsTrackingId = 'animate_' + Math.floor(Math.random() * 1000);
+    const color = isColourful ? generateRGB() : generateCyanOrPurple();
+    ctx.strokeStyle = color;
+    if (glow) {
+      ctx.shadowBlur = 2;
+      ctx.shadowColor = color;
+    }
+    ctx.lineWidth = Math.floor(Math.random() * maxLineThickness);
+    ctx.lineCap = "round";
+
+    animate(pts, t, id);
+  }, timeBetweenLines);
 }
-function startFinishTimer() {
+/*function startFinishTimer() {
     timeoutId = setTimeout(function() {
         clearInterval(intervalId);
     }, timeBetweenLines*numberOfLines);
