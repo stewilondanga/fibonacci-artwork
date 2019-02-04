@@ -120,41 +120,41 @@ const drawStroke = function(points, offset, strokeColor) {
   ctx.stroke();
 };
 
-/*const FibonacciGenerator = function(){
-    const thisFibonacci = this;
+const FibonacciGenerator = function() {
+  const thisFibonacci = this;
 
-    thisFibonacci.array = [0, 1, 2];
+  thisFibonacci.array = [0, 1, 2];
 
-    thisFibonacci.getDiscrete = function(n){
-        // If the Fibonacci number is not in the array, calculate it
-        while (n >= thisFibonacci.array.length){
-            const length = thisFibonacci.array.length;
-            const nextFibonacci = thisFibonacci.array[length - 1] + thisFibonacci.array[length - 2];
-            thisFibonacci.array.push(nextFibonacci);
-        }
+  thisFibonacci.getDiscrete = function(n) {
+    // If the Fibonacci number is not in the array, calculate it
+    while (n >= thisFibonacci.array.length) {
+      const length = thisFibonacci.array.length;
+      const nextFibonacci = thisFibonacci.array[length - 1] + thisFibonacci.array[length - 2];
+      thisFibonacci.array.push(nextFibonacci);
+    }
 
-        return thisFibonacci.array[n];
-    };
+    return thisFibonacci.array[n];
+  };
 
-    thisFibonacci.getNumber = function(n){
-        const floor = Math.floor(n);
-        const ceil = Math.ceil(n);
+  thisFibonacci.getNumber = function(n) {
+    const floor = Math.floor(n);
+    const ceil = Math.ceil(n);
 
-        if (Math.floor(n) == n){
-            return thisFibonacci.getDiscrete(n);
-        }
+    if (Math.floor(n) == n) {
+      return thisFibonacci.getDiscrete(n);
+    }
 
-        const a = Math.pow(n - floor, 1.15);
-        const fibFloor = thisFibonacci.getDiscrete(floor);
-        const fibCeil = thisFibonacci.getDiscrete(ceil);
+    const a = Math.pow(n - floor, 1.15);
+    const fibFloor = thisFibonacci.getDiscrete(floor);
+    const fibCeil = thisFibonacci.getDiscrete(ceil);
 
-        return fibFloor + a * (fibCeil - fibFloor);
-    };
+    return fibFloor + a * (fibCeil - fibFloor);
+  };
 
-    return thisFibonacci;
+  return thisFibonacci;
 };
 
-const getSpiral = function(pA, pB){
+/*const getSpiral = function(pA, pB){
     const startStep = 0;
     const endStep = 4; // Each "step" is 90º, so 4 steps is a full turn=
     const angleToPointB = getAngle(pA,pB); // Angle between pA and pB
