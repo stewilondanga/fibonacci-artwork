@@ -154,35 +154,35 @@ const FibonacciGenerator = function() {
   return thisFibonacci;
 };
 
-/*const getSpiral = function(pA, pB){
-    const startStep = 0;
-    const endStep = 4; // Each "step" is 90º, so 4 steps is a full turn=
-    const angleToPointB = getAngle(pA,pB); // Angle between pA and pB
-    const distToPointB = getDistance(pA,pB); // Distance between pA and pB
-    const fibonacci = new FibonacciGenerator();
-    // Find scale so that the last point of the curve is at distance to pB
-    const endRadius = fibonacci.getNumber(endStep);
-    const scale = distToPointB / endRadius;
-    // Find angle offset so that last point of the curve is at angle to pB
-    const angleOffset = angleToPointB - endStep * Math.PI / 2;
-    const path = [];
+const getSpiral = function(pA, pB) {
+  const startStep = 0;
+  const endStep = 4; // Each "step" is 90º, so 4 steps is a full turn=
+  const angleToPointB = getAngle(pA, pB); // Angle between pA and pB
+  const distToPointB = getDistance(pA, pB); // Distance between pA and pB
+  const fibonacci = new FibonacciGenerator();
+  // Find scale so that the last point of the curve is at distance to pB
+  const endRadius = fibonacci.getNumber(endStep);
+  const scale = distToPointB / endRadius;
+  // Find angle offset so that last point of the curve is at angle to pB
+  const angleOffset = angleToPointB - endStep * Math.PI / 2;
+  const path = [];
 
-    for (let i = startStep * precision; i <= endStep * precision; i++){
-        const step = i / precision;
-        const radius = fibonacci.getNumber(step);
-        const angle = step * Math.PI / 2;
-        const p = {
-            x: scale * radius * Math.cos(angle + angleOffset) + pA.x,
-            y: scale * radius * Math.sin(angle + angleOffset) + pA.y
-        };
+  for (let i = startStep * precision; i <= endStep * precision; i++) {
+    const step = i / precision;
+    const radius = fibonacci.getNumber(step);
+    const angle = step * Math.PI / 2;
+    const p = {
+      x: scale * radius * Math.cos(angle + angleOffset) + pA.x,
+      y: scale * radius * Math.sin(angle + angleOffset) + pA.y
+    };
 
-        path.push(p);
-    }
-    return path;
+    path.push(p);
+  }
+  return path;
 };
 
 
-function generateCyanOrPurple() {
+/*function generateCyanOrPurple() {
 	const rand = Math.random();
 
 	  if (rand <= 0.25) {
