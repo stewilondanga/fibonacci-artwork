@@ -99,25 +99,28 @@ const getAngle = function(p1, p2) {
   return Math.atan2(p2.y - p1.y, p2.x - p1.x);
 };
 
-/*const drawStroke = function(points, offset, strokeColor){
-    const p = points[0];
+const drawStroke = function(points, offset, strokeColor) {
+  const p = points[0];
 
-    // Default value
-    offset = offset || {x:0,y:0}; // Offset to center on screen
-    strokeColor = strokeColor || "black";
+  // Default value
+  offset = offset || {
+    x: 0,
+    y: 0
+  }; // Offset to center on screen
+  strokeColor = strokeColor || "black";
 
-    ctx.strokeStyle = strokeColor;
-    ctx.beginPath();
-    ctx.moveTo(offset.x + p.x, offset.y + p.y);
+  ctx.strokeStyle = strokeColor;
+  ctx.beginPath();
+  ctx.moveTo(offset.x + p.x, offset.y + p.y);
 
-    for(const i = 1; i < points.length; i++){
-        p = points[i];
-        ctx.lineTo(offset.x + p.x, offset.y + p.y);
-    }
-    ctx.stroke();
+  for (const i = 1; i < points.length; i++) {
+    p = points[i];
+    ctx.lineTo(offset.x + p.x, offset.y + p.y);
+  }
+  ctx.stroke();
 };
 
-const FibonacciGenerator = function(){
+/*const FibonacciGenerator = function(){
     const thisFibonacci = this;
 
     thisFibonacci.array = [0, 1, 2];
