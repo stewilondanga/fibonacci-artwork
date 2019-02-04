@@ -13,10 +13,11 @@
   height: 1.5em;
 }
 
-/*.spin {
-    -webkit-animation: spin 7s linear 0s infinite reverse;
+.spin {
+  -webkit-animation: spin 7s linear 0s infinite reverse;
 }
-#can {
+
+/*#can {
     margin-left: -90px;
     margin-top: -90px;
 }
