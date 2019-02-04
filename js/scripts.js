@@ -229,15 +229,16 @@ function getRandomSign() {
 function generateRandomColour() {
   return Math.floor(Math.random() * 255);
 }
-/*function generateRGB(){
-    const red = generateRandomColour();
-    const green = generateRandomColour();
-    const blue = generateRandomColour();
 
-	return `rgb(${red},${green},${blue})`
+function generateRGB() {
+  const red = generateRandomColour();
+  const green = generateRandomColour();
+  const blue = generateRandomColour();
+
+  return `rgb(${red},${green},${blue})`
 }
 
-function animate(points, t, id) {
+/*function animate(points, t, id) {
     if (t++ < points.length - 1) {
         // Uncomment to throttle requestAnimationFrame to watch the rendering slowly. Best to only render single line.
         // setTimeout(function() {
