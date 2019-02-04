@@ -101,11 +101,12 @@
   font-size: 13px;
 }
 
-/*.checkbox:before {
-    content: "On";
-    left: 13px;
+.checkbox:before {
+  content: "On";
+  left: 13px;
 }
-.checkbox:after {
+
+/*.checkbox:after {
     content: "Off";
     left: 60px;
 }
