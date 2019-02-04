@@ -16,8 +16,8 @@ const timeBetweenLines = 380;
 const canvas = document.getElementById("can");
 const ctx = canvas.getContext("2d");
 const results = document.getElementById('results')
-/*const width = ctx.canvas.width;
-const height = ctx.canvas.height;
+const width = ctx.canvas.width;
+/*const height = ctx.canvas.height;
 const half = width/2;
 const center = {
     x: width / 2,
