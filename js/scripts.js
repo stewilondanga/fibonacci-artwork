@@ -274,6 +274,6 @@ document.getElementById('can').addEventListener('click', function() {
   startInterval()
   startFinishTimer();
 });
-/*document.getElementById('can').addEventListener('contextmenu', function () {
-   clearInterval(intervalId);
+document.getElementById('can').addEventListener('contextmenu', function() {
+  clearInterval(intervalId);
 });
