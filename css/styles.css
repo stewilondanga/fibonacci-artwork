@@ -17,11 +17,12 @@
   -webkit-animation: spin 7s linear 0s infinite reverse;
 }
 
-/*#can {
-    margin-left: -90px;
-    margin-top: -90px;
+#can {
+  margin-left: -90px;
+  margin-top: -90px;
 }
-@keyframes spin {
+
+/*@keyframes spin {
     0% {
         transform: rotate(360deg);
     }
