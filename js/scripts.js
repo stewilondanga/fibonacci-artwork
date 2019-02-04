@@ -24,8 +24,8 @@ const center = {
   y: height / 2
 };
 let then = Date.now();
-/*let startTime = then;
-let frameCount = 0;
+let startTime = then;
+/*let frameCount = 0;
 let fpsTrackingId, intervalId, timeoutId, isColourful, cool, numberOfLines, glow, maxLineThickness;
 
 function fetchVariables() {
