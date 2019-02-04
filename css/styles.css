@@ -132,12 +132,12 @@
 /**
  * Create the checkbox event for the label
  */
-/*.checkbox input[type="checkbox"]:checked + label {
-    left: 35px;
-    background: #cd7f32;
+.checkbox input[type="checkbox"]:checked+label {
+  left: 35px;
+  background: #cd7f32;
 }
 
-.num {
+/*.num {
     width: 30px;
     color: white;
     background-color: black;
