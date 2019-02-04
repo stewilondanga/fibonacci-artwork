@@ -10,10 +10,10 @@ var navigate = (function() {
 
 // You can change these
 const precision = 6; // also controls speed
-/*
+
 // Don't change anything below
 const timeBetweenLines = 380;
-const canvas = document.getElementById("can");
+/*const canvas = document.getElementById("can");
 const ctx = canvas.getContext("2d");
 const results = document.getElementById('results')
 const width = ctx.canvas.width;
