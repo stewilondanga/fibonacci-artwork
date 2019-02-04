@@ -218,14 +218,14 @@ function getRandomEdgePosition() {
   }
 }
 
-/*function getRandomSign(){
-    const random = Math.floor(Math.random()*199) - 99;
-    if (random === 0) {
-    	return getNonZeroRandomNumber();
-    }
-    return Math.sign(random);
+function getRandomSign() {
+  const random = Math.floor(Math.random() * 199) - 99;
+  if (random === 0) {
+    return getNonZeroRandomNumber();
+  }
+  return Math.sign(random);
 }
-function generateRandomColour() {
+/*function generateRandomColour() {
 	return Math.floor(Math.random()*255);
 }
 function generateRGB(){
