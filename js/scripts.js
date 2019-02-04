@@ -225,10 +225,11 @@ function getRandomSign() {
   }
   return Math.sign(random);
 }
-/*function generateRandomColour() {
-	return Math.floor(Math.random()*255);
+
+function generateRandomColour() {
+  return Math.floor(Math.random() * 255);
 }
-function generateRGB(){
+/*function generateRGB(){
     const red = generateRandomColour();
     const green = generateRandomColour();
     const blue = generateRandomColour();
