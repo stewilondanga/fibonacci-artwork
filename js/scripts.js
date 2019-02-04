@@ -268,12 +268,12 @@ function displayFrameData() {
   results.innerText = totalTime + " secs @ " + currentFps + " fps" + ' = ' + totalFrames + ' frames';
 }
 
-/*document.getElementById('can').addEventListener('click', function () {
-    clearInterval(intervalId);
-    clearTimeout(timeoutId);
-    startInterval()
-    startFinishTimer();
+document.getElementById('can').addEventListener('click', function() {
+  clearInterval(intervalId);
+  clearTimeout(timeoutId);
+  startInterval()
+  startFinishTimer();
 });
-document.getElementById('can').addEventListener('contextmenu', function () {
+/*document.getElementById('can').addEventListener('contextmenu', function () {
    clearInterval(intervalId);
 });
