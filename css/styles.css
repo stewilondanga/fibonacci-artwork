@@ -42,16 +42,16 @@
   }
 }
 
-/*#wrapper {
-    margin-top: 30px;
-    width: 420px;
-    height: 420px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
+#wrapper {
+  margin-top: 30px;
+  width: 420px;
+  height: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 
-#results {
+/*#results {
     display: none;
 }
 
