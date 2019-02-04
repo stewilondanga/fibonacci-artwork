@@ -21,6 +21,50 @@
         </a>
     </div>
 
+    <p id="results"></p>
+
+    <div id="wrapper">
+        <canvas id="can" width="600" height="600"></canvas>
+    </div>
+
+    <div id="plaque">
+        <label id="plaqueLabel">"Fibonacci Artwork"</label>
+
+        <div style="margin-top: 5px; margin-left: 25px;">
+            <label id="label" for="cool">Roughness:</label>
+            <input name="cool" class="num" type="number" id="cool" value="4" min="0" max="10" />
+        </div>
+
+        <div style="margin-top: 5px; margin-left: 46px;">
+            <label id="label" for="numberOfLines"># Lines:</label>
+            <input name="numberOfLines" class="num" type="number" id="numberOfLines" value="25" min="1" max="400" />
+        </div>
+        <div style="margin-top: 5px;">
+            <label id="label" for="maxLineThickness">Max line width:</label>
+            <input name="maxLineThickness" class="num" type="number" id="maxLineThickness" value="4" min="1" max="10" />
+        </div>
+
+        <div style="margin-top: 10px;">
+            <div class="checkbox">
+                <input type="checkbox" id="colourful" class="checkboxInput" checked>
+                <label for="colourful">Colour</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="glow" class="checkboxInput">
+                <label for="glow">Glow</label>
+            </div>
+        </div>
+        <div style="margin-top: 10px;">
+            <div class="checkbox">
+                <input type="checkbox" id="spin" class="checkboxInput" checked>
+                <label for="spin">Spin</label>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
   <section id="contact">
     <div class="overlay">
       <div class="containers">
