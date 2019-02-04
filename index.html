@@ -10,72 +10,73 @@
 <body>
 
   <div class="my_social">
-      <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
-          <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
-        </a>
-      <a href="https://stewilondanga.github.io/" class="social">
-          <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
-        </a>
-      <a href="https://twitter.com/stew_ilondanga" class="social">
-          <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
-        </a>
+    <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
+      <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
+    </a>
+    <a href="https://stewilondanga.github.io/" class="social">
+      <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
+    </a>
+    <a href="https://twitter.com/stew_ilondanga" class="social">
+      <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
+    </a>
+  </div>
+
+  <p id="results"></p>
+
+  <div id="wrapper">
+    <canvas id="can" width="600" height="600"></canvas>
+  </div>
+
+  <div id="plaque">
+    <label id="plaqueLabel">"Fibonacci Artwork"</label>
+
+    <div style="margin-top: 5px; margin-left: 25px;">
+      <label id="label" for="cool">Roughness:</label>
+      <input name="cool" class="num" type="number" id="cool" value="4" min="0" max="10" />
     </div>
 
-    <p id="results"></p>
-
-    <div id="wrapper">
-        <canvas id="can" width="600" height="600"></canvas>
+    <div style="margin-top: 5px; margin-left: 46px;">
+      <label id="label" for="numberOfLines"># Lines:</label>
+      <input name="numberOfLines" class="num" type="number" id="numberOfLines" value="25" min="1" max="400" />
+    </div>
+    <div style="margin-top: 5px;">
+      <label id="label" for="maxLineThickness">Max line width:</label>
+      <input name="maxLineThickness" class="num" type="number" id="maxLineThickness" value="4" min="1" max="10" />
     </div>
 
-    <div id="plaque">
-        <label id="plaqueLabel">"Fibonacci Artwork"</label>
-
-        <div style="margin-top: 5px; margin-left: 25px;">
-            <label id="label" for="cool">Roughness:</label>
-            <input name="cool" class="num" type="number" id="cool" value="4" min="0" max="10" />
-        </div>
-
-        <div style="margin-top: 5px; margin-left: 46px;">
-            <label id="label" for="numberOfLines"># Lines:</label>
-            <input name="numberOfLines" class="num" type="number" id="numberOfLines" value="25" min="1" max="400" />
-        </div>
-        <div style="margin-top: 5px;">
-            <label id="label" for="maxLineThickness">Max line width:</label>
-            <input name="maxLineThickness" class="num" type="number" id="maxLineThickness" value="4" min="1" max="10" />
-        </div>
-
-        <div style="margin-top: 10px;">
-            <div class="checkbox">
-                <input type="checkbox" id="colourful" class="checkboxInput" checked>
-                <label for="colourful">Colour</label>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" id="glow" class="checkboxInput">
-                <label for="glow">Glow</label>
-            </div>
-        </div>
-        <div style="margin-top: 10px;">
-            <div class="checkbox">
-                <input type="checkbox" id="spin" class="checkboxInput" checked>
-                <label for="spin">Spin</label>
-            </div>
-        </div>
-
+    <div style="margin-top: 10px;">
+      <div class="checkbox">
+        <input type="checkbox" id="colourful" class="checkboxInput" checked>
+        <label for="colourful">Colour</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="glow" class="checkboxInput">
+        <label for="glow">Glow</label>
+      </div>
+    </div>
+    <div style="margin-top: 10px;">
+      <div class="checkbox">
+        <input type="checkbox" id="spin" class="checkboxInput" checked>
+        <label for="spin">Spin</label>
+      </div>
     </div>
 
-    </div>
+  </div>
+
+  </div>
 
   <section id="contact">
     <div class="overlay">
       <div class="containers">
 
         <h1>
-<script>
-with(new Date)c=-new Date(y=getFullYear(),m=getMonth()).getDay(x=new Date(y,++m,0).getDate(b=-1))
-h='<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 '+' '+y+'/'+m+'<tr>'+'SuMoTuWeThFrSa'.replace(/(..)/g,'<th>$1')
-while((b++>5?b=0:b)|c<x)h+=(b?'':'<tr>')+'<td>'+(++c<1|c>x?'-':c);document.write(h+'</table>')
-</script>
-</h1>
+          <script>
+            with(new Date) c = -new Date(y = getFullYear(), m = getMonth()).getDay(x = new Date(y, ++m, 0).getDate(b = -1))
+            h = '<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 ' + ' ' + y + '/' + m + '<tr>' + 'SuMoTuWeThFrSa'.replace(/(..)/g, '<th>$1')
+            while ((b++ > 5 ? b = 0 : b) | c < x) h += (b ? '' : '<tr>') + '<td>' + (++c < 1 | c > x ? '-' : c);
+            document.write(h + '</table>')
+          </script>
+        </h1>
 
       </div>
     </div>
