@@ -23,8 +23,8 @@ const center = {
   x: width / 2,
   y: height / 2
 };
-/*let then = Date.now();
-let startTime = then;
+let then = Date.now();
+/*let startTime = then;
 let frameCount = 0;
 let fpsTrackingId, intervalId, timeoutId, isColourful, cool, numberOfLines, glow, maxLineThickness;
 
