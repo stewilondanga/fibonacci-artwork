@@ -87,12 +87,12 @@
   top: -5px;
 }
 
-/*.checkboxInput {
-    appearance: none !important;
-    -webkit-appearance: none !important;
+.checkboxInput {
+  appearance: none !important;
+  -webkit-appearance: none !important;
 }
 
-.checkbox:before,
+/*.checkbox:before,
 .checkbox:after {
     position: absolute;
     top: 8px;
