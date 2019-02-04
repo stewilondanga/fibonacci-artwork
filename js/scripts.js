@@ -192,21 +192,33 @@ function generateCyanOrPurple() {
   }
 }
 
-/*function getRandomEdgePosition() {
-	const rand = Math.random();
+function getRandomEdgePosition() {
+  const rand = Math.random();
 
-    if (rand < 0.25) { // Top border
-        return { x: Math.random()*500 - half, y: -half };
-    } else if (rand >= 0.25 && rand < 0.5) { // Right border
-        return { x: half, y: Math.random()*500 - half };
-    } else if (rand >= 0.5 && rand < 0.75) { // Bottom border
-        return { x: Math.random()*500 - half, y: half };
-    } else if (rand >= 0.75) { // Left border
-        return { x: -half, y: Math.random()*500 - half }
+  if (rand < 0.25) { // Top border
+    return {
+      x: Math.random() * 500 - half,
+      y: -half
+    };
+  } else if (rand >= 0.25 && rand < 0.5) { // Right border
+    return {
+      x: half,
+      y: Math.random() * 500 - half
+    };
+  } else if (rand >= 0.5 && rand < 0.75) { // Bottom border
+    return {
+      x: Math.random() * 500 - half,
+      y: half
+    };
+  } else if (rand >= 0.75) { // Left border
+    return {
+      x: -half,
+      y: Math.random() * 500 - half
     }
+  }
 }
 
-function getRandomSign(){
+/*function getRandomSign(){
     const random = Math.floor(Math.random()*199) - 99;
     if (random === 0) {
     	return getNonZeroRandomNumber();
