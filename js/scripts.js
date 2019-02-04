@@ -238,25 +238,25 @@ function generateRGB() {
   return `rgb(${red},${green},${blue})`
 }
 
-/*function animate(points, t, id) {
-    if (t++ < points.length - 1) {
-        // Uncomment to throttle requestAnimationFrame to watch the rendering slowly. Best to only render single line.
-        // setTimeout(function() {
-        requestAnimationFrame(animate.bind(self, points, t, id));
-        // }, 1000 / 3);
-    }
-    ctx.beginPath();
-    ctx.moveTo(points[t - 1].x + center.x, points[t - 1].y + center.y);
-    const point = points.length > t + cool ? points[t + cool] : points[points.length - 1];
-    ctx.lineTo(point.x + center.x, point.y + center.y);
-    ctx.stroke();
+function animate(points, t, id) {
+  if (t++ < points.length - 1) {
+    // Uncomment to throttle requestAnimationFrame to watch the rendering slowly. Best to only render single line.
+    // setTimeout(function() {
+    requestAnimationFrame(animate.bind(self, points, t, id));
+    // }, 1000 / 3);
+  }
+  ctx.beginPath();
+  ctx.moveTo(points[t - 1].x + center.x, points[t - 1].y + center.y);
+  const point = points.length > t + cool ? points[t + cool] : points[points.length - 1];
+  ctx.lineTo(point.x + center.x, point.y + center.y);
+  ctx.stroke();
 
-    if (id === fpsTrackingId) {
-        displayFrameData();
-    }
+  if (id === fpsTrackingId) {
+    displayFrameData();
+  }
 }
 
-
+/*
 function displayFrameData() {
 	const now = Date.now();
     const elapsed = now - then;
