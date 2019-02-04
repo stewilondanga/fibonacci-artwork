@@ -92,16 +92,16 @@
   -webkit-appearance: none !important;
 }
 
-/*.checkbox:before,
+.checkbox:before,
 .checkbox:after {
-    position: absolute;
-    top: 8px;
-    height: 2px;
-    color: #cd7f32;
-    font-size: 13px;
+  position: absolute;
+  top: 8px;
+  height: 2px;
+  color: #cd7f32;
+  font-size: 13px;
 }
 
-.checkbox:before {
+/*.checkbox:before {
     content: "On";
     left: 13px;
 }
