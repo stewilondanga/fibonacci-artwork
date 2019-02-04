@@ -26,9 +26,9 @@ const center = {
 let then = Date.now();
 let startTime = then;
 let frameCount = 0;
-/*let fpsTrackingId, intervalId, timeoutId, isColourful, cool, numberOfLines, glow, maxLineThickness;
+let fpsTrackingId, intervalId, timeoutId, isColourful, cool, numberOfLines, glow, maxLineThickness;
 
-function fetchVariables() {
+/*function fetchVariables() {
     isColourful = document.getElementById("colourful").checked;
     cool = parseInt(document.getElementById("cool").value);
     numberOfLines = parseInt(document.getElementById("numberOfLines").value);
