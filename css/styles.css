@@ -22,15 +22,17 @@
   margin-top: -90px;
 }
 
-/*@keyframes spin {
-    0% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
-@-webkit-keyframes spin {
+
+/*@-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(360deg);
     }
