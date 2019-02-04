@@ -256,20 +256,19 @@ function animate(points, t, id) {
   }
 }
 
-/*
 function displayFrameData() {
-	const now = Date.now();
-    const elapsed = now - then;
-	const sinceStart = now - startTime;
-    const currentFps = Math.round(1000 / (sinceStart / ++frameCount) * 100) / 100;
-    const totalTime = Math.round(sinceStart / 1000 * 100) / 100;
-    const totalFrames = Math.round(currentFps*totalTime);
+  const now = Date.now();
+  const elapsed = now - then;
+  const sinceStart = now - startTime;
+  const currentFps = Math.round(1000 / (sinceStart / ++frameCount) * 100) / 100;
+  const totalTime = Math.round(sinceStart / 1000 * 100) / 100;
+  const totalFrames = Math.round(currentFps * totalTime);
 
-	then = now - (elapsed % 60);
-    results.innerText = totalTime + " secs @ " + currentFps + " fps" + ' = ' + totalFrames + ' frames';
+  then = now - (elapsed % 60);
+  results.innerText = totalTime + " secs @ " + currentFps + " fps" + ' = ' + totalFrames + ' frames';
 }
 
-document.getElementById('can').addEventListener('click', function () {
+/*document.getElementById('can').addEventListener('click', function () {
     clearInterval(intervalId);
     clearTimeout(timeoutId);
     startInterval()
