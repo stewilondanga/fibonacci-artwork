@@ -51,11 +51,11 @@
   overflow: hidden;
 }
 
-/*#results {
-    display: none;
+#results {
+  display: none;
 }
 
-#plaqueLabel {
+/*#plaqueLabel {
     color: #cd7f32;
     display: block;
     font-size: 16px;
