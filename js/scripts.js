@@ -28,21 +28,21 @@ let startTime = then;
 let frameCount = 0;
 let fpsTrackingId, intervalId, timeoutId, isColourful, cool, numberOfLines, glow, maxLineThickness;
 
-/*function fetchVariables() {
-    isColourful = document.getElementById("colourful").checked;
-    cool = parseInt(document.getElementById("cool").value);
-    numberOfLines = parseInt(document.getElementById("numberOfLines").value);
-    maxLineThickness = parseInt(document.getElementById("maxLineThickness").value);
-    glow = document.getElementById("glow").checked;
+function fetchVariables() {
+  isColourful = document.getElementById("colourful").checked;
+  cool = parseInt(document.getElementById("cool").value);
+  numberOfLines = parseInt(document.getElementById("numberOfLines").value);
+  maxLineThickness = parseInt(document.getElementById("maxLineThickness").value);
+  glow = document.getElementById("glow").checked;
 
-    const spinCanvas = document.getElementById("spin").checked;
-    if (spinCanvas) {
-        document.getElementById('can').className = 'spin';
-    } else {
-        document.getElementById('can').className = '';
-    }
+  const spinCanvas = document.getElementById("spin").checked;
+  if (spinCanvas) {
+    document.getElementById('can').className = 'spin';
+  } else {
+    document.getElementById('can').className = '';
+  }
 }
-function startInterval() {
+/*function startInterval() {
     fetchVariables();
     ctx.clearRect(0, 0, width, height);
     // Make canvas circular
